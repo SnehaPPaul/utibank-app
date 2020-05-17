@@ -1,0 +1,27 @@
+<!-- <div class="border">
+    <h5>Accounts</h5>
+    <hr/>
+        <span>Account Number  : {{accountDetails.accNumber}}</span>
+    <br/>
+        <span>Account Number  : {{accountDetails.accBalance}}</span>
+</div> -->
+
+
+<div *ngFor="let account of accounts">
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Account</mat-card-title>
+      <!-- <mat-card-subtitle></mat-card-subtitle> -->
+    </mat-card-header>
+    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+    <mat-card-content>
+        <div class="row">Account Number  : {{account.accNumber}}</div>
+        <div class="row">Account Balance  : {{account.accBalance|currency}}</div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" style="margin-left:2rem" (click)="transfer(account)">Transfer</button>
+    </mat-card-actions>
+  </mat-card>
+  
+
+ 

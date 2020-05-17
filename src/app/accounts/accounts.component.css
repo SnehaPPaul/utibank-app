@@ -1,0 +1,40 @@
+/*
+to display the box
+*/
+
+
+
+
+  .border{
+    margin-left: 5rem;
+    margin-top: 3rem;
+    border: 5px solid white;
+    width: 272px;
+    height: 130px;
+    background: lightgrey
+  }
+
+
+  .example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .mat-card{
+    margin-left:8rem;
+    margin-top:3rem;
+  }
+
+  .mat-card-content{
+    margin-left:2rem;
+    margin-right:2rem;
+  }
+
+
+  .background{
+    background-color: #e8e8e8 !important;
+  }

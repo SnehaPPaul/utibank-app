@@ -1,0 +1,9 @@
+.login-form {
+  margin-top: 5rem;
+  justify-content: center;
+  display: flex;
+}
+
+.form-group{
+  margin-left:2rem;
+}

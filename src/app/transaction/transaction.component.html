@@ -1,0 +1,30 @@
+<div class="container" style="margin-top:5rem">
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!-- Position Column -->
+    <ng-container matColumnDef="accountNumber">
+      <mat-header-cell *matHeaderCellDef> Account From</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.accountNumber}} </mat-cell>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="emailId">
+      <mat-header-cell *matHeaderCellDef> Account To </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.emailId}} </mat-cell>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="amount">
+      <mat-header-cell *matHeaderCellDef> Amount </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.amount|currency}} </mat-cell>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="transactionDate">
+      <mat-header-cell *matHeaderCellDef> Transaction Date </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.transactionDate|date:'short':'UTC-4'}} </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+  </div>
